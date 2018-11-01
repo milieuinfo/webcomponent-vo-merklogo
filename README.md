@@ -1,0 +1,1 @@
+# webcomponent-vo-merklogo
