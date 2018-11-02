@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+		<title>vo-header demo</title>
+		
+		<script src="../assets/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+		<script type="module">
+			import '../assets/@polymer/iron-demo-helpers/demo-snippet.js';
+			import '../assets/@polymer/iron-demo-helpers/demo-pages-shared-styles.js';
+			import '../vo-merklogo.js';
+		</script>
+	</head>
+	<body unresolved>
+		<div class="vertical-section-container centered">
+			<h3>Basis vo-merklogo demo</h3>
+			<demo-snippet class="centered-demo">
+				<template>
+					<vo-merklogo></vo-merklogo>
+				</template>
+			</demo-snippet>
+		</div>
+		
+		<div class="vertical-section-container centered">
+			<h3>vo-merklogo met tekst demo</h3>
+			<demo-snippet class="centered-demo">
+				<template>
+					<vo-merklogo tekst="Vlaanderen boven"></vo-merklogo>
+				</template>
+			</demo-snippet>
+		</div>
+		
+		<div class="vertical-section-container centered">
+			<h3>vo-merklogo met een andere kleur demo</h3>
+			<demo-snippet class="centered-demo">
+				<template>
+					<vo-merklogo kleur="rgba(245, 245, 245, 1)"></vo-merklogo>
+				</template>
+			</demo-snippet>
+		</div>
+	</body>
+</html>

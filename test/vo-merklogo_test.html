@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+		<title>vo-header test</title>
+
+		<script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+		<script src="../node_modules/wct-browser-legacy/browser.js"></script>
+	</head>
+	
+	<body>
+		<test-fixture id="vo-merklogo-fixture">
+			<template>
+				<vo-merklogo></vo-merklogo>
+			</template>
+		</test-fixture>
+
+		<script type="module">
+			import '../dist/vo-merklogo.js';
+
+			suite('vo-merklogo', () => {
+				const should = chai.should();
+
+				test('bevat het logo van Vlaanderen', (done) => {
+					const element = fixture('vo-merklogo-fixture');
+					flush(() => {
+						const logo = element.shadowRoot.querySelector('#leeuw');
+						should.exist(logo);
+						done();
+					});
+				});
+
+				test('kan een tekst tonen naast het logo onder Vlaanderen', (done) => {
+					const element = fixture('vo-merklogo-fixture');
+					const tekst = 'Vlaanderen boven';
+					element.tekst = tekst;
+					flush(() => {
+						const hoofdlijn = element.shadowRoot.querySelector('#hoofdlijn');
+						const bijlijn = element.shadowRoot.querySelector('#bijlijn');
+						should.exist(hoofdlijn);
+						should.exist(bijlijn);
+						assert.equal(hoofdlijn.textContent, 'Vlaanderen');
+						assert.equal(bijlijn.textContent, tekst);
+						done();
+					});
+				});
+
+				test('kan een andere achtegrondkleur krijgen', () => {
+					const element = fixture('vo-merklogo-fixture');
+					const kleur = 'pink';
+					element.kleur = kleur;
+					assert.equal(element.style.background, '');
+					flush(() => {
+						assert.equal(element.style.background, kleur);
+					});
+				});
+			});
+		</script>
+	</body>
+</html>
