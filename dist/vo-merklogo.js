@@ -95,8 +95,8 @@ class VoMerklogo extends LitElement {
 	            }
 	        </style>
 	        
-	        <div id="leeuw"></div>
-	        ${this._tekst}
+	    	<div id="leeuw"></div>
+	    	${this._tekst}
     	`;
   }
 

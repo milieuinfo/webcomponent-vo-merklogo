@@ -2,7 +2,7 @@
   "_from": "@polymer/font-roboto@^3.0.1",
   "_id": "@polymer/font-roboto@3.0.2",
   "_inBundle": false,
-  "_integrity": "sha1-gM2qciXbI1kTDfssbZo74YIAIMM=",
+  "_integrity": "sha512-tx5TauYSmzsIvmSqepUPDYbs4/Ejz2XbZ1IkD7JEGqkdNUJlh+9KU85G56Tfdk/xjEZ8zorFfN09OSwiMrIQWA==",
   "_location": "/@polymer/font-roboto",
   "_phantomChildren": {},
   "_requested": {
@@ -20,10 +20,10 @@
     "/@polymer/iron-demo-helpers",
     "/@polymer/paper-styles"
   ],
-  "_resolved": "http://artifactory-pr.lb.cumuli.be:8081/artifactory/api/npm/acd-npm/@polymer/font-roboto/-/font-roboto-3.0.2.tgz",
+  "_resolved": "https://registry.npmjs.org/@polymer/font-roboto/-/font-roboto-3.0.2.tgz",
   "_shasum": "80cdaa7225db2359130dfb2c6d9a3be1820020c3",
   "_spec": "@polymer/font-roboto@^3.0.1",
-  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stageDyuCRB/node_modules/@polymer/paper-styles",
+  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stageCUF6EH/node_modules/@polymer/paper-styles",
   "author": {
     "name": "The Polymer Authors"
   },

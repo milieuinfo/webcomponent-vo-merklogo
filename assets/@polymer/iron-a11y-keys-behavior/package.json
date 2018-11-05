@@ -2,7 +2,7 @@
   "_from": "@polymer/iron-a11y-keys-behavior@^3.0.0-pre.26",
   "_id": "@polymer/iron-a11y-keys-behavior@3.0.1",
   "_inBundle": false,
-  "_integrity": "sha1-KGjqcpEtIAf/q0c0aEqR9arEm4Q=",
+  "_integrity": "sha512-lnrjKq3ysbBPT/74l0Fj0U9H9C35Tpw2C/tpJ8a+5g8Y3YJs1WSZYnEl1yOkw6sEyaxOq/1DkzH0+60gGu5/PQ==",
   "_location": "/@polymer/iron-a11y-keys-behavior",
   "_phantomChildren": {},
   "_requested": {
@@ -21,10 +21,10 @@
     "/@polymer/iron-overlay-behavior",
     "/@polymer/paper-ripple"
   ],
-  "_resolved": "http://artifactory-pr.lb.cumuli.be:8081/artifactory/api/npm/acd-npm/@polymer/iron-a11y-keys-behavior/-/iron-a11y-keys-behavior-3.0.1.tgz",
+  "_resolved": "https://registry.npmjs.org/@polymer/iron-a11y-keys-behavior/-/iron-a11y-keys-behavior-3.0.1.tgz",
   "_shasum": "2868ea72912d2007ffab4734684a91f5aac49b84",
   "_spec": "@polymer/iron-a11y-keys-behavior@^3.0.0-pre.26",
-  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stageDyuCRB/node_modules/@polymer/iron-behaviors",
+  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stageCUF6EH/node_modules/@polymer/iron-behaviors",
   "author": {
     "name": "The Polymer Authors"
   },

@@ -2,7 +2,7 @@
   "_from": "@polymer/polymer@3.1.0",
   "_id": "@polymer/polymer@3.1.0",
   "_inBundle": false,
-  "_integrity": "sha1-Pht0R6HjUP1lThgj3vZV0PCCinA=",
+  "_integrity": "sha512-hwN8IMERsFATz/9dSMxYHL+84J9uBkPuuarxJWlTsppZ4CAYTZKnepBfNrKoyNsafBmA3yXBiiKPPf+fJtza7A==",
   "_location": "/@polymer/polymer",
   "_phantomChildren": {},
   "_requested": {
@@ -48,10 +48,10 @@
     "/@polymer/paper-toast",
     "/@polymer/prism-element"
   ],
-  "_resolved": "http://artifactory-pr.lb.cumuli.be:8081/artifactory/api/npm/acd-npm/@polymer/polymer/-/polymer-3.1.0.tgz",
+  "_resolved": "https://registry.npmjs.org/@polymer/polymer/-/polymer-3.1.0.tgz",
   "_shasum": "3e1b7447a1e350fd654e1823def655d0f0828a70",
   "_spec": "@polymer/polymer@3.1.0",
-  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stageDyuCRB",
+  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stageCUF6EH",
   "author": {
     "name": "The Polymer Project Authors"
   },

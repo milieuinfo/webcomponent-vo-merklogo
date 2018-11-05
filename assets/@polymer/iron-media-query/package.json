@@ -2,7 +2,7 @@
   "_from": "@polymer/iron-media-query@^3.0.0-pre.26",
   "_id": "@polymer/iron-media-query@3.0.1",
   "_inBundle": false,
-  "_integrity": "sha1-XNihwejJuLr9PdXaFOD40s+nbYM=",
+  "_integrity": "sha512-czUX1pm1zfmfcZtq5J57XFkcobBv08Y50exp0/3v8Bos5VL/jv2tU0RwiTfDBxUMhjicGbgwEBFQPY2V5DMzyw==",
   "_location": "/@polymer/iron-media-query",
   "_phantomChildren": {},
   "_requested": {
@@ -19,10 +19,10 @@
   "_requiredBy": [
     "/@polymer/app-layout"
   ],
-  "_resolved": "http://artifactory-pr.lb.cumuli.be:8081/artifactory/api/npm/acd-npm/@polymer/iron-media-query/-/iron-media-query-3.0.1.tgz",
+  "_resolved": "https://registry.npmjs.org/@polymer/iron-media-query/-/iron-media-query-3.0.1.tgz",
   "_shasum": "5cd8a1c1e8c9b8bafd3dd5da14e0f8d2cfa76d83",
   "_spec": "@polymer/iron-media-query@^3.0.0-pre.26",
-  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stageDyuCRB/node_modules/@polymer/app-layout",
+  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stageCUF6EH/node_modules/@polymer/app-layout",
   "author": {
     "name": "The Polymer Authors"
   },

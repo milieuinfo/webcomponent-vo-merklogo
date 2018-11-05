@@ -2,7 +2,7 @@
   "_from": "@polymer/marked-element@^3.0.0-pre.26",
   "_id": "@polymer/marked-element@3.0.1",
   "_inBundle": false,
-  "_integrity": "sha1-Vq3WIIBATeoULAVZd4B66cp3Ook=",
+  "_integrity": "sha512-WJQzQetxdStVGQbyTBUBgd+hSI0Rl39uJg7b2zL3r6EfMnibzmA/YNT06M8jVZdxPF+B4SumrFWRtasVtGQRUQ==",
   "_location": "/@polymer/marked-element",
   "_phantomChildren": {},
   "_requested": {
@@ -20,10 +20,10 @@
     "/@polymer/iron-demo-helpers",
     "/@polymer/iron-doc-viewer"
   ],
-  "_resolved": "http://artifactory-pr.lb.cumuli.be:8081/artifactory/api/npm/acd-npm/@polymer/marked-element/-/marked-element-3.0.1.tgz",
+  "_resolved": "https://registry.npmjs.org/@polymer/marked-element/-/marked-element-3.0.1.tgz",
   "_shasum": "56add62080404dea142c055977807ae9ca773a89",
   "_spec": "@polymer/marked-element@^3.0.0-pre.26",
-  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stageDyuCRB/node_modules/@polymer/iron-doc-viewer",
+  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stageCUF6EH/node_modules/@polymer/iron-doc-viewer",
   "author": {
     "name": "The Polymer Project Authors",
     "url": "https://polymer.github.io/AUTHORS.txt"

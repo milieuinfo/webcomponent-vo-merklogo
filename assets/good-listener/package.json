@@ -18,10 +18,10 @@
   "_requiredBy": [
     "/clipboard"
   ],
-  "_resolved": "http://artifactory-pr.lb.cumuli.be:8081/artifactory/api/npm/acd-npm/good-listener/-/good-listener-1.2.2.tgz",
+  "_resolved": "https://registry.npmjs.org/good-listener/-/good-listener-1.2.2.tgz",
   "_shasum": "d53b30cdf9313dffb7dc9a0d477096aa6d145c50",
   "_spec": "good-listener@^1.2.2",
-  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stageDyuCRB/node_modules/clipboard",
+  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stageCUF6EH/node_modules/clipboard",
   "bugs": {
     "url": "https://github.com/zenorocha/good-listener/issues"
   },

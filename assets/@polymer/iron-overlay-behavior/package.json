@@ -2,7 +2,7 @@
   "_from": "@polymer/iron-overlay-behavior@^3.0.0-pre.27",
   "_id": "@polymer/iron-overlay-behavior@3.0.2",
   "_inBundle": false,
-  "_integrity": "sha1-ahKj9Oq0ch62l47ZUL5TTJwoOYM=",
+  "_integrity": "sha512-j1qmt6mJHCwpe1mKOvqK5kcCUPQr5LSrlqpgRDbUuLgUfNJ/vGTipjrkBlfbEUagm5FEQdc1VLPLSQP6WVuP9g==",
   "_location": "/@polymer/iron-overlay-behavior",
   "_phantomChildren": {},
   "_requested": {
@@ -19,10 +19,10 @@
   "_requiredBy": [
     "/@polymer/paper-toast"
   ],
-  "_resolved": "http://artifactory-pr.lb.cumuli.be:8081/artifactory/api/npm/acd-npm/@polymer/iron-overlay-behavior/-/iron-overlay-behavior-3.0.2.tgz",
+  "_resolved": "https://registry.npmjs.org/@polymer/iron-overlay-behavior/-/iron-overlay-behavior-3.0.2.tgz",
   "_shasum": "6a12a3f4eab4721eb6978ed950be534c9c283983",
   "_spec": "@polymer/iron-overlay-behavior@^3.0.0-pre.27",
-  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stageDyuCRB/node_modules/@polymer/paper-toast",
+  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stageCUF6EH/node_modules/@polymer/paper-toast",
   "author": {
     "name": "The Polymer Authors"
   },
