@@ -27,7 +27,6 @@
     "test:chrome": "polymer test -l chrome --expanded",
     "test:firefox": "polymer test -l firefox --expanded",
     "release": "np",
-    "postinstall": "empathy install",
     "prepublish": "empathy publish vo-merklogo.js"
   },
   "publishConfig": {
