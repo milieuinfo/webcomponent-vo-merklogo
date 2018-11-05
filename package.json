@@ -6,7 +6,7 @@
   },
   "homepage": "https://github.com/milieuinfo/webcomponent-vo-merklogo#readme",
   "name": "vo-merklogo",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "directories": {
     "test": "test",
     "demo": "demo"
@@ -27,6 +27,7 @@
     "test:chrome": "polymer test -l chrome --expanded",
     "test:firefox": "polymer test -l firefox --expanded",
     "release": "np --yolo",
+	"postinstall": "empathy install",
     "prepublish": "empathy publish vo-merklogo.js"
   },
   "publishConfig": {
