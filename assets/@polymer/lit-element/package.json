@@ -1,28 +1,28 @@
 {
-  "_from": "@polymer/lit-element@0.6.1",
-  "_id": "@polymer/lit-element@0.6.1",
+  "_from": "@polymer/lit-element@0.6.2",
+  "_id": "@polymer/lit-element@0.6.2",
   "_inBundle": false,
-  "_integrity": "sha512-eselNs2lA4n1R1rSyPXW8XR3ISmbYVQcDtIMSINHVNZ56pCtCHOtgmaG8C4k0gONwikEMJTP9blNHD/gdYIxFA==",
+  "_integrity": "sha1-WJ8voZ6E0jwd67LDKcurdYrjBYE=",
   "_location": "/@polymer/lit-element",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "@polymer/lit-element@0.6.1",
+    "raw": "@polymer/lit-element@0.6.2",
     "name": "@polymer/lit-element",
     "escapedName": "@polymer%2flit-element",
     "scope": "@polymer",
-    "rawSpec": "0.6.1",
+    "rawSpec": "0.6.2",
     "saveSpec": null,
-    "fetchSpec": "0.6.1"
+    "fetchSpec": "0.6.2"
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/@polymer/lit-element/-/lit-element-0.6.1.tgz",
-  "_shasum": "56772f8fb0c6d3d73a20a6d17f3bc82ec648664b",
-  "_spec": "@polymer/lit-element@0.6.1",
-  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stagekzSZdi",
+  "_resolved": "http://artifactory-pr.lb.cumuli.be:8081/artifactory/api/npm/acd-npm/@polymer/lit-element/-/lit-element-0.6.2.tgz",
+  "_shasum": "589f2fa19e84d23c1debb2c329cbab758ae30581",
+  "_spec": "@polymer/lit-element@0.6.2",
+  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stageOumF1t",
   "author": {
     "name": "The Polymer Authors"
   },
@@ -31,7 +31,7 @@
   },
   "bundleDependencies": false,
   "dependencies": {
-    "lit-html": "^0.11.4"
+    "lit-html": "^0.12.0"
   },
   "deprecated": false,
   "description": "Polymer based lit-html custom element",
@@ -79,5 +79,5 @@
     "test": "npm run build && wct"
   },
   "typings": "lit-element.d.ts",
-  "version": "0.6.1"
+  "version": "0.6.2"
 }

@@ -2,7 +2,7 @@
   "_from": "@polymer/iron-scroll-target-behavior@^3.0.0-pre.26",
   "_id": "@polymer/iron-scroll-target-behavior@3.0.1",
   "_inBundle": false,
-  "_integrity": "sha512-xg1WanG25BIkQE8rhuReqY9zx1K5M7F+YAIYpswEp5eyDIaZ1Y3vUmVeQ3KG+hiSugzI1M752azXN7kvyhOBcQ==",
+  "_integrity": "sha1-KfpkSzIPspq2xo620IplIBV3ZKw=",
   "_location": "/@polymer/iron-scroll-target-behavior",
   "_phantomChildren": {},
   "_requested": {
@@ -19,10 +19,10 @@
   "_requiredBy": [
     "/@polymer/app-layout"
   ],
-  "_resolved": "https://registry.npmjs.org/@polymer/iron-scroll-target-behavior/-/iron-scroll-target-behavior-3.0.1.tgz",
+  "_resolved": "http://artifactory-pr.lb.cumuli.be:8081/artifactory/api/npm/acd-npm/@polymer/iron-scroll-target-behavior/-/iron-scroll-target-behavior-3.0.1.tgz",
   "_shasum": "29fa644b320fb29ab6c68eb6d08a6520157764ac",
   "_spec": "@polymer/iron-scroll-target-behavior@^3.0.0-pre.26",
-  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stagekzSZdi/node_modules/@polymer/app-layout",
+  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stageOumF1t/node_modules/@polymer/app-layout",
   "author": {
     "name": "The Polymer Authors"
   },

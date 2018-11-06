@@ -2,7 +2,7 @@
   "_from": "@polymer/paper-behaviors@^3.0.0-pre.27",
   "_id": "@polymer/paper-behaviors@3.0.1",
   "_inBundle": false,
-  "_integrity": "sha512-6knhj69fPJejv8qR0kCSUY+Q0XjaUf0OSnkjRjmTJPAwSrRYtgqE+l6P1FfA+py1X/cUjgne9EF5rMZAKJIg1g==",
+  "_integrity": "sha1-g/HNBkifSEwbEIopZ/sBlS33Iq0=",
   "_location": "/@polymer/paper-behaviors",
   "_phantomChildren": {},
   "_requested": {
@@ -19,10 +19,10 @@
   "_requiredBy": [
     "/@polymer/paper-icon-button"
   ],
-  "_resolved": "https://registry.npmjs.org/@polymer/paper-behaviors/-/paper-behaviors-3.0.1.tgz",
+  "_resolved": "http://artifactory-pr.lb.cumuli.be:8081/artifactory/api/npm/acd-npm/@polymer/paper-behaviors/-/paper-behaviors-3.0.1.tgz",
   "_shasum": "83f1cd06489f484c1b108a2967fb01952df722ad",
   "_spec": "@polymer/paper-behaviors@^3.0.0-pre.27",
-  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stagekzSZdi/node_modules/@polymer/paper-icon-button",
+  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stageOumF1t/node_modules/@polymer/paper-icon-button",
   "author": {
     "name": "The Polymer Authors"
   },

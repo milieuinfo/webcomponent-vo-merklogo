@@ -1,27 +1,27 @@
 {
-  "_from": "lit-html@^0.11.4",
-  "_id": "lit-html@0.11.4",
+  "_from": "lit-html@^0.12.0",
+  "_id": "lit-html@0.12.0",
   "_inBundle": false,
-  "_integrity": "sha512-yfJUxQrRjhYo4cdz3Db9YlkHs9v+rTZA4fvE/dqCOrA1Q2Bmx52X2OtEgGQ+JhyCb6ddDTndLijZjsSoQ44G7Q==",
+  "_integrity": "sha1-2ZRCD9p0dE+dSnlAGwht6SlkPmo=",
   "_location": "/lit-html",
   "_phantomChildren": {},
   "_requested": {
     "type": "range",
     "registry": true,
-    "raw": "lit-html@^0.11.4",
+    "raw": "lit-html@^0.12.0",
     "name": "lit-html",
     "escapedName": "lit-html",
-    "rawSpec": "^0.11.4",
+    "rawSpec": "^0.12.0",
     "saveSpec": null,
-    "fetchSpec": "^0.11.4"
+    "fetchSpec": "^0.12.0"
   },
   "_requiredBy": [
     "/@polymer/lit-element"
   ],
-  "_resolved": "https://registry.npmjs.org/lit-html/-/lit-html-0.11.4.tgz",
-  "_shasum": "fa397d2b2f2d0523ebc136e5a1699aa4e9346152",
-  "_spec": "lit-html@^0.11.4",
-  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stagekzSZdi/node_modules/@polymer/lit-element",
+  "_resolved": "http://artifactory-pr.lb.cumuli.be:8081/artifactory/api/npm/acd-npm/lit-html/-/lit-html-0.12.0.tgz",
+  "_shasum": "d994420fda74744f9d4a79401b086de929643e6a",
+  "_spec": "lit-html@^0.12.0",
+  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stageOumF1t/node_modules/@polymer/lit-element",
   "author": {
     "name": "The Polymer Authors"
   },
@@ -42,9 +42,9 @@
     "rollup": "^0.64.1",
     "rollup-plugin-filesize": "^4.0.1",
     "rollup-plugin-terser": "^1.0.1",
-    "tslint": "^5.9.1",
+    "tslint": "^5.11.0",
     "typedoc": "^0.12.0",
-    "typescript": "^2.8.3",
+    "typescript": "^3.1.1",
     "uglify-es": "^3.3.5",
     "wct-browser-legacy": "^1.0.1",
     "web-component-tester": "^6.8.0"
@@ -56,6 +56,7 @@
     "/lit-html.js",
     "/lit-html.js.map",
     "/lit-html.d.ts",
+    "/lit-html.d.ts.map",
     "/lib/",
     "/directives/",
     "/src/",
@@ -81,5 +82,5 @@
     "test": "npm run build && npm run lint && wct --npm"
   },
   "typings": "lit-html.d.ts",
-  "version": "0.11.4"
+  "version": "0.12.0"
 }

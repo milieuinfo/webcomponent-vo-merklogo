@@ -2,7 +2,7 @@
   "_from": "@polymer/iron-iconset-svg@^3.0.0-pre.26",
   "_id": "@polymer/iron-iconset-svg@3.0.1",
   "_inBundle": false,
-  "_integrity": "sha512-XNwURbNHRw6u2fJe05O5fMYye6GSgDlDqCO+q6K1zAnKIrpgZwf2vTkBd5uCcZwsN0FyCB3mvNZx4jkh85dRDw==",
+  "_integrity": "sha1-Vo1ufbwSApna5jvjYArroNMN2+o=",
   "_location": "/@polymer/iron-iconset-svg",
   "_phantomChildren": {},
   "_requested": {
@@ -19,10 +19,10 @@
   "_requiredBy": [
     "/@polymer/iron-icons"
   ],
-  "_resolved": "https://registry.npmjs.org/@polymer/iron-iconset-svg/-/iron-iconset-svg-3.0.1.tgz",
+  "_resolved": "http://artifactory-pr.lb.cumuli.be:8081/artifactory/api/npm/acd-npm/@polymer/iron-iconset-svg/-/iron-iconset-svg-3.0.1.tgz",
   "_shasum": "568d6e7dbc120299dae63be3600aeba0d30ddbea",
   "_spec": "@polymer/iron-iconset-svg@^3.0.0-pre.26",
-  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stagekzSZdi/node_modules/@polymer/iron-icons",
+  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stageOumF1t/node_modules/@polymer/iron-icons",
   "author": {
     "name": "The Polymer Authors"
   },

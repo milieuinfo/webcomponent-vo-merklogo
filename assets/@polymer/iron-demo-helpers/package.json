@@ -2,7 +2,7 @@
   "_from": "@polymer/iron-demo-helpers@3.0.2",
   "_id": "@polymer/iron-demo-helpers@3.0.2",
   "_inBundle": false,
-  "_integrity": "sha512-VqGEIOEXPgx9G6uLfvnzXVib6sE6lJENV3gywoBTstrMCrFCSGpmTMVAovpHyoDw8Ceu6LeoVuMsxaT1mCEirg==",
+  "_integrity": "sha1-uiUDVVthZudQFuBy81fO4VtEsDw=",
   "_location": "/@polymer/iron-demo-helpers",
   "_phantomChildren": {},
   "_requested": {
@@ -19,10 +19,10 @@
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/@polymer/iron-demo-helpers/-/iron-demo-helpers-3.0.2.tgz",
+  "_resolved": "http://artifactory-pr.lb.cumuli.be:8081/artifactory/api/npm/acd-npm/@polymer/iron-demo-helpers/-/iron-demo-helpers-3.0.2.tgz",
   "_shasum": "ba2503555b6166e75016e072f357cee15b44b03c",
   "_spec": "@polymer/iron-demo-helpers@3.0.2",
-  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stagekzSZdi",
+  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stageOumF1t",
   "author": {
     "name": "The Polymer Authors"
   },
