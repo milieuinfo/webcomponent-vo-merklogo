@@ -242,6 +242,12 @@ export class UpdatingElement extends HTMLElement {
         }
     }
     /**
+     * Allows for `super.disconnectedCallback()` in extensions while
+     * reserving the possibility of making non-breaking feature additions
+     * when disconnecting at some point in the future.
+     */
+    disconnectedCallback() {}
+    /**
      * Synchronizes property values when attributes change.
      */
     attributeChangedCallback(name, old, value) {

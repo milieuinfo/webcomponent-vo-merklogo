@@ -25,12 +25,14 @@ const partCaches = new WeakMap();
  *
  * Example:
  *
+ * ```
  * let checked = false;
  *
  * html`
  *   when(checked, () => html`Checkmark is checked`, () => html`Checkmark is not
  * checked`);
  * `
+ * ```
  *
  * @param condition the condition to test truthiness against
  * @param trueValue the value to render given a true condition
@@ -44,8 +46,8 @@ export const when = (condition, trueValue, falseValue) => directive(parentPart =
         // docment fragment which we cache the nodes of the condition that's
         // not currently rendered.
         cache = {
-            truePart: new NodePart(parentPart.templateFactory),
-            falsePart: new NodePart(parentPart.templateFactory),
+            truePart: new NodePart(parentPart.options),
+            falsePart: new NodePart(parentPart.options),
             cacheContainer: document.createDocumentFragment()
         };
         partCaches.set(parentPart, cache);

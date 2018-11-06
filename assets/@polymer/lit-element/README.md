@@ -5,6 +5,7 @@
 
 [![Published on npm](https://img.shields.io/npm/v/@polymer/lit-element.svg)](https://www.npmjs.com/package/@polymer/lit-element)
 [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/@polymer/lit-element)
+[![Mentioned in Awesome lit-html](https://awesome.re/mentioned-badge.svg)](https://github.com/web-padawan/awesome-lit-html)
 
 ## A simple base class for creating custom elements rendered with lit-html.
 
@@ -61,10 +62,10 @@ and renders declaratively using `lit-html`.
   describing dynamic parts with standard JavaScript template expressions:
 
     * static elements: ``` html`<div>Hi</div>` ```
-    * expression: ``` html`<div>${disabled ? 'Off' : 'On'}</div>` ```
-    * property: ``` html`<x-foo .bar="${bar}"></x-foo>` ```
-    * attribute: ``` html`<div class="${color} special"></div>` ```
-    * event handler: ``` html`<button @click="${(e) => this._clickHandler(e)}"></button>` ```
+    * expression: ``` html`<div>${this.disabled ? 'Off' : 'On'}</div>` ```
+    * property: ``` html`<x-foo .bar="${this.bar}"></x-foo>` ```
+    * attribute: ``` html`<div class="${this.color} special"></div>` ```
+    * event handler: ``` html`<button @click="${this._clickHandler}"></button>` ```
 
 ## Getting started
 
@@ -113,12 +114,12 @@ and renders declaratively using `lit-html`.
   getter that returns the element's properties). (which automatically become observed attributes).
   1. Then implement a `render()` method and use the element's
 current properties to return a `lit-html` template result to render
-into the element. This is the only method that must be implemented by subclasses.
+into the element.
 
 ```html
   <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
   <script type="module">
-    import {LitElement, html, property} from '@polymer/lit-element';
+    import {LitElement, html} from '@polymer/lit-element';
 
     class MyElement extends LitElement {
 
@@ -149,10 +150,9 @@ into the element. This is the only method that must be implemented by subclasses
 ## API Documentation
 
   * `render()` (protected): Implement to describe the element's DOM using `lit-html`. Ideally,
-  the `render` implementation is a [pure function](https://en.wikipedia.org/wiki/Pure_function) using only the element's current properties
-  to describe the element template. This is the only method that must be implemented by subclasses.
-  Note, since `render()` is called by `update()`, setting properties does not trigger
-  an update, allowing property values to be computed and validated.
+  the `render` implementation is a [pure function](https://en.wikipedia.org/wiki/Pure_function) using only the element's current properties to describe the element template. Note, since
+  `render()` is called by `update()`, setting properties does not trigger an
+  update, allowing property values to be computed and validated.
 
   * `shouldUpdate(changedProperties)` (protected): Implement to control if updating and rendering
   should occur when property values change or `requestUpdate()` is called. The `changedProperties`

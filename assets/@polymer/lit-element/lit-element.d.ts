@@ -12,12 +12,11 @@
  * http://polymer.github.io/PATENTS.txt
  */
 import { TemplateResult } from 'lit-html';
-import { render } from 'lit-html/lib/shady-render';
 import { PropertyValues, UpdatingElement } from './lib/updating-element.js';
 export * from './lib/updating-element.js';
 export * from './lib/decorators.js';
 export { html, svg } from 'lit-html/lit-html';
-export declare abstract class LitElement extends UpdatingElement {
+export declare class LitElement extends UpdatingElement {
     /**
      * Render method used to render the lit-html TemplateResult to the element's
      * DOM.
@@ -25,7 +24,7 @@ export declare abstract class LitElement extends UpdatingElement {
      * @param {Element|DocumentFragment} Node into which to render.
      * @param {String} Element name.
      */
-    static render: typeof render;
+    static render: (result: TemplateResult, container: Element | DocumentFragment, options: import("lit-html/lib/shady-render").ShadyRenderOptions) => void;
     /**
      * Updates the element. This method reflects property values to attributes
      * and calls `render` to render DOM via lit-html. Setting properties inside
@@ -34,10 +33,10 @@ export declare abstract class LitElement extends UpdatingElement {
      */
     protected update(changedProperties: PropertyValues): void;
     /**
-     Invoked on each update to perform rendering tasks. This method must return a
-     lit-html TemplateResult. Setting properties inside this method will *not*
-     trigger the element to update.
+     * Invoked on each update to perform rendering tasks. This method must return
+     * a lit-html TemplateResult. Setting properties inside this method will *not*
+     * trigger the element to update.
      * @returns {TemplateResult} Must return a lit-html TemplateResult.
      */
-    protected abstract render(): TemplateResult;
+    protected render(): void;
 }

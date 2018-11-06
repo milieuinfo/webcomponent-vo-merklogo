@@ -53,7 +53,7 @@ const TEMPLATE_TYPES = ['html', 'svg'];
 /**
  * Removes all style elements from Templates for the given scopeName.
  */
-function removeStylesFromLitTemplates(scopeName) {
+const removeStylesFromLitTemplates = scopeName => {
     TEMPLATE_TYPES.forEach(type => {
         const templates = templateCaches.get(getTemplateCacheKey(type, scopeName));
         if (templates !== undefined) {
@@ -68,7 +68,7 @@ function removeStylesFromLitTemplates(scopeName) {
             });
         }
     });
-}
+};
 const shadyRenderSet = new Set();
 /**
  * For the given scope name, ensures that ShadyCSS style scoping is performed.
@@ -130,9 +130,10 @@ const prepareTemplateStyles = (renderedDOM, template, scopeName) => {
         removeNodesFromTemplate(template, removes);
     }
 };
-export function render(result, container, scopeName) {
+export const render = (result, container, options) => {
+    const scopeName = options.scopeName;
     const hasRendered = parts.has(container);
-    litRender(result, container, shadyTemplateFactory(scopeName));
+    litRender(result, container, Object.assign({ templateFactory: shadyTemplateFactory(scopeName) }, options));
     // When rendering a TemplateResult, scope the template with ShadyCSS
     if (container instanceof ShadowRoot && compatibleShadyCSSVersion && result instanceof TemplateResult) {
         // Scope the element template one time only for this scope.
@@ -146,5 +147,5 @@ export function render(result, container, scopeName) {
             window.ShadyCSS.styleElement(container.host);
         }
     }
-}
+};
 //# sourceMappingURL=shady-render.js.map

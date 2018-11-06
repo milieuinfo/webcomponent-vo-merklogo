@@ -19,6 +19,7 @@ var __decorate = this && this.__decorate || function (decorators, target, key, d
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+import { eventOptions } from '../../lib/decorators.js';
 import { customElement, html, LitElement, query, queryAll } from '../../lit-element.js';
 import { generateElementName } from '../test-helpers.js';
 const assert = chai.assert;
@@ -101,6 +102,28 @@ suite('decorators', () => {
             // This is not true in ShadyDOM:
             // assert.instanceOf(divs, NodeList);
             assert.lengthOf(spans, 0);
+        });
+    });
+    suite('@eventOptions', () => {
+        test('allows capturing listeners', async () => {
+            let C = class C extends LitElement {
+                render() {
+                    return html`
+            <div @click=${this.onClick}><button></button></div>
+          `;
+                }
+                onClick(e) {
+                    this.eventPhase = e.eventPhase;
+                }
+            };
+            __decorate([eventOptions({ capture: true })], C.prototype, "onClick", null);
+            C = __decorate([customElement(generateElementName())], C);
+            const c = new C();
+            container.appendChild(c);
+            await c.updateComplete;
+            const button = c.shadowRoot.querySelector('button');
+            button.click();
+            assert.equal(c.eventPhase, Event.CAPTURING_PHASE);
         });
     });
 });

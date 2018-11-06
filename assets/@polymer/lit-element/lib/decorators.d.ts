@@ -13,7 +13,7 @@
  */
 import { PropertyDeclaration } from './updating-element.js';
 export declare type Constructor<T> = {
-    new (...args: unknown[]): T;
+    new (...args: any[]): T;
 };
 /**
  * Class decorator factory that defines the decorated class as a custom element.
@@ -51,3 +51,30 @@ export declare const query: (selector: string) => (proto: any, propName: string)
  * that executes a querySelectorAll on the element's renderRoot.
  */
 export declare const queryAll: (selector: string) => (proto: any, propName: string) => void;
+/**
+ * Adds event listener options to a method used as an event listener in a
+ * lit-html template.
+ *
+ * @param options An object that specifis event listener options as accepted by
+ * `EventTarget#addEventListener` and `EventTarget#removeEventListener`.
+ *
+ * Current browsers support the `capture`, `passive`, and `once` options. See:
+ * https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#Parameters
+ *
+ * @example
+ *
+ *     class MyElement {
+ *
+ *       clicked = false;
+ *
+ *       render() {
+ *         return html`<div @click=${this._onClick}`><button></button></div>`;
+ *       }
+ *
+ *       @eventOptions({capture: true})
+ *       _onClick(e) {
+ *         this.clicked = true;
+ *       }
+ *     }
+ */
+export declare const eventOptions: (options: EventListenerOptions) => (proto: any, name: string) => void;

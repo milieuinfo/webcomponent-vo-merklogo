@@ -20,7 +20,7 @@ export * from './lib/updating-element.js';
 export * from './lib/decorators.js';
 export {html, svg} from 'lit-html/lit-html';
 
-export abstract class LitElement extends UpdatingElement {
+export class LitElement extends UpdatingElement {
 
   /**
    * Render method used to render the lit-html TemplateResult to the element's
@@ -39,19 +39,19 @@ export abstract class LitElement extends UpdatingElement {
    */
   protected update(changedProperties: PropertyValues) {
     super.update(changedProperties);
-    if (typeof this.render === 'function') {
+    const templateResult = this.render() as any;
+    if (templateResult instanceof TemplateResult) {
       (this.constructor as typeof LitElement)
-          .render(this.render(), this.renderRoot!, this.localName!);
-    } else {
-      throw new Error('render() not implemented');
+          .render(templateResult, this.renderRoot!,
+                  {scopeName : this.localName!, eventContext : this});
     }
   }
 
   /**
-   Invoked on each update to perform rendering tasks. This method must return a
-   lit-html TemplateResult. Setting properties inside this method will *not*
-   trigger the element to update.
+   * Invoked on each update to perform rendering tasks. This method must return
+   * a lit-html TemplateResult. Setting properties inside this method will *not*
+   * trigger the element to update.
    * @returns {TemplateResult} Must return a lit-html TemplateResult.
    */
-  protected abstract render(): TemplateResult;
+  protected render() {}
 }

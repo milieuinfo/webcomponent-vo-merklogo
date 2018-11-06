@@ -14,7 +14,7 @@
 /**
  * Converts property values to and from attribute values.
  */
-interface AttributeSerializer<T = any> {
+export interface AttributeSerializer<T = any> {
     /**
      * Deserializing function called to convert an attribute value to a property
      * value.
@@ -195,6 +195,12 @@ export declare abstract class UpdatingElement extends HTMLElement {
      * Uses ShadyCSS to keep element DOM updated.
      */
     connectedCallback(): void;
+    /**
+     * Allows for `super.disconnectedCallback()` in extensions while
+     * reserving the possibility of making non-breaking feature additions
+     * when disconnecting at some point in the future.
+     */
+    disconnectedCallback(): void;
     /**
      * Synchronizes property values when attributes change.
      */

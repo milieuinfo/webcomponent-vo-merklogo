@@ -74,4 +74,34 @@ function _query(queryFn) {
     });
   };
 }
+/**
+ * Adds event listener options to a method used as an event listener in a
+ * lit-html template.
+ *
+ * @param options An object that specifis event listener options as accepted by
+ * `EventTarget#addEventListener` and `EventTarget#removeEventListener`.
+ *
+ * Current browsers support the `capture`, `passive`, and `once` options. See:
+ * https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#Parameters
+ *
+ * @example
+ *
+ *     class MyElement {
+ *
+ *       clicked = false;
+ *
+ *       render() {
+ *         return html`<div @click=${this._onClick}`><button></button></div>`;
+ *       }
+ *
+ *       @eventOptions({capture: true})
+ *       _onClick(e) {
+ *         this.clicked = true;
+ *       }
+ *     }
+ */
+export const eventOptions = options => (proto, name) => {
+  // This comment is here to fix a disagreement between formatter and linter
+  Object.assign(proto[name], options);
+};
 //# sourceMappingURL=decorators.js.map
