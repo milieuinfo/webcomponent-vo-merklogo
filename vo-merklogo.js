@@ -5,7 +5,7 @@ import {LitElement, html} from '../../node_modules/vodomg-litelement/@polymer/li
  * 
  * @customElement
  * @polymer
- * @demo demo/index.html
+ * @demo demo/vo-merklogo.html
  */
 class VoMerklogo extends LitElement {
 	static get properties() {
