@@ -1,23 +1,22 @@
 {
-  "_from": "@polymer/polymer@3.1.0",
+  "_from": "@polymer/polymer@^3.0.0",
   "_id": "@polymer/polymer@3.1.0",
   "_inBundle": false,
   "_integrity": "sha1-Pht0R6HjUP1lThgj3vZV0PCCinA=",
   "_location": "/@polymer/polymer",
   "_phantomChildren": {},
   "_requested": {
-    "type": "version",
+    "type": "range",
     "registry": true,
-    "raw": "@polymer/polymer@3.1.0",
+    "raw": "@polymer/polymer@^3.0.0",
     "name": "@polymer/polymer",
     "escapedName": "@polymer%2fpolymer",
     "scope": "@polymer",
-    "rawSpec": "3.1.0",
+    "rawSpec": "^3.0.0",
     "saveSpec": null,
-    "fetchSpec": "3.1.0"
+    "fetchSpec": "^3.0.0"
   },
   "_requiredBy": [
-    "/",
     "/@polymer/app-layout",
     "/@polymer/iron-a11y-announcer",
     "/@polymer/iron-a11y-keys-behavior",
@@ -50,8 +49,8 @@
   ],
   "_resolved": "http://artifactory-pr.lb.cumuli.be:8081/artifactory/api/npm/acd-npm/@polymer/polymer/-/polymer-3.1.0.tgz",
   "_shasum": "3e1b7447a1e350fd654e1823def655d0f0828a70",
-  "_spec": "@polymer/polymer@3.1.0",
-  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stageOumF1t",
+  "_spec": "@polymer/polymer@^3.0.0",
+  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stagecXLSXw/node_modules/@polymer/iron-component-page",
   "author": {
     "name": "The Polymer Project Authors"
   },

@@ -19,7 +19,7 @@ class VoMerklogo extends LitElement {
     		 */
     		tekst: String,
     		/**
-    		 * Tekst lit-html met een hoofdlijn tekst en bijlijn die bepaald kan worden door de `tekst` property
+    		 * Tekst lit-html met een hoofdlijn tekst en bijlijn die bepaald kan worden door de `tekst` property.
     		 */
     		_tekst: String
     	};

@@ -17,12 +17,12 @@
     "fetchSpec": "0.6.2"
   },
   "_requiredBy": [
-    "/"
+    "/vodomg-litelement"
   ],
   "_resolved": "http://artifactory-pr.lb.cumuli.be:8081/artifactory/api/npm/acd-npm/@polymer/lit-element/-/lit-element-0.6.2.tgz",
   "_shasum": "589f2fa19e84d23c1debb2c329cbab758ae30581",
   "_spec": "@polymer/lit-element@0.6.2",
-  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stageOumF1t",
+  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stagecXLSXw/node_modules/vodomg-litelement",
   "author": {
     "name": "The Polymer Authors"
   },

@@ -44,11 +44,10 @@
   },
   "main": "vo-header.js",
   "dependencies": {
-    "@polymer/polymer": "3.1.0",
-    "@polymer/lit-element": "0.6.2",
     "@polymer/iron-demo-helpers": "3.0.2",
     "@polymer/iron-component-page": "4.0.1",
     "@webcomponents/webcomponentsjs": "2.1.3",
+    "vodomg-litelement": "milieuinfo/webcomponent-vodomg-litelement",
     "vodomg-demo": "milieuinfo/webcomponent-vodomg-demo#v1.0.0"
   }
 }

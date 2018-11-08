@@ -21,7 +21,7 @@
   "_resolved": "http://artifactory-pr.lb.cumuli.be:8081/artifactory/api/npm/acd-npm/select/-/select-1.1.2.tgz",
   "_shasum": "0e7350acdec80b1108528786ec1d4418d11b396d",
   "_spec": "select@^1.1.2",
-  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stageOumF1t/node_modules/clipboard",
+  "_where": "/private/var/folders/90/9cnpsq_53ng_m4n6q6zfvy5h0000gn/T/asset_stagecXLSXw/node_modules/clipboard",
   "bugs": {
     "url": "https://github.com/zenorocha/select/issues"
   },
