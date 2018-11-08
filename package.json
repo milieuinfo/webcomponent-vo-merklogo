@@ -6,7 +6,7 @@
   },
   "homepage": "https://github.com/milieuinfo/webcomponent-vo-merklogo#readme",
   "name": "vo-merklogo",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "directories": {
     "test": "test",
     "demo": "demo"
@@ -22,7 +22,6 @@
     "build:docs": "polymer analyze dist/vo-merklogo.js > analysis.json",
     "build:dist": "polymer build",
     "build:local": "npm run clean && bower install && npm install && npm run test && npm run build:dist && npm run build:docs",
-    "build:empathy": "empathy install",
     "dev": "browser-sync start --proxy localhost:8080 --startPath / --serveStatic . --files .",
     "test": "polymer test -l chrome,firefox --expanded",
     "test:chrome": "polymer test -l chrome --expanded",
