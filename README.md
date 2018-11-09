@@ -10,7 +10,7 @@ npm install --save vo-merklogo
 
 ### Documentatie en demo
 
-[Publicatie van documentatie en demo](https://milieuinfo.github.io/webcomponent-vo-merklogo)
+[Publicatie van documentatie en demo](https://milieuinfo.github.io/webcomponenten-demo)
 
 ## Ontwikkelaars
 
