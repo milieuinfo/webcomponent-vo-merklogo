@@ -17,11 +17,7 @@ class VoMerklogo extends LitElement {
     		/**
     		 * Tekst die naast het logo zal gerenderd worden.
     		 */
-    		tekst: String,
-    		/**
-    		 * Tekst lit-html met een hoofdlijn tekst en bijlijn die bepaald kan worden door de `tekst` property.
-    		 */
-    		_tekst: String
+    		tekst: String
     	};
     }
 	
@@ -31,8 +27,7 @@ class VoMerklogo extends LitElement {
 	 * @return {TemplateResult}
 	 */
     render() {
-    	this._changeBackgroundColor();
-    	this._computeTekst();
+    	this._wijzigAchtergrondKleur();
     	
     	return html`
    			<style>
@@ -96,7 +91,7 @@ class VoMerklogo extends LitElement {
 	        </style>
 	        
 	    	<div id="leeuw"></div>
-	    	${this._tekst}
+	    	${this._tekstTemplate}
     	`;
     }
     
@@ -105,18 +100,18 @@ class VoMerklogo extends LitElement {
      * 
      * @return {void}
      */
-    _changeBackgroundColor() {
+    _wijzigAchtergrondKleur() {
     	this.style.backgroundColor = this.kleur;
     }
 	
     /**
-     * Bepaalt de '_tekst' propertie die gebruikt wordt bij het renderen
+     * Genereert en geeft de tekst template.
      * 
      * @return {void}
      */
-	_computeTekst() {
+	get _tekstTemplate() {
 		if (this.tekst) {
-    		this._tekst = html`
+    		return html`
     			<div id="tekst">
 	                <div id="hoofdlijn">Vlaanderen</div>
 	                <div id="bijlijn">${this.tekst}</div>
