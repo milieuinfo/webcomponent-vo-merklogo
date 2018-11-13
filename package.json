@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "np": "3.0.4",
+    "polymer-cli": "1.8.1",
     "wct-browser-legacy": "1.0.2"
   },
   "scripts": {
@@ -25,7 +26,8 @@
     "test": "polymer test -l chrome,firefox --expanded",
     "test:chrome": "polymer test -l chrome --expanded",
     "test:firefox": "polymer test -l firefox --expanded",
-    "release": "np --yolo"
+    "release": "np",
+    "release:testless": "np --yolo"
   },
   "publishConfig": {
     "registry": "http://artifactory-pr-build.lb.cumuli.be:8081/artifactory/api/npm/acd-npm/"
