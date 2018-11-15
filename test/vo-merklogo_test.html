@@ -53,12 +53,11 @@
 					const element = fixture('vo-merklogo-fixture');
                     await element.updateComplete;
                     
-                    assert.equal(element.style.background, '');
+                    assert.equal(element.style.backgroundColor, '');
 
                     const kleur = 'pink';
 					element.kleur = kleur;
                     await element.updateComplete;
-                    await element.requestUpdate();
 
                     assert.equal(element.style.backgroundColor, kleur);
 				});
