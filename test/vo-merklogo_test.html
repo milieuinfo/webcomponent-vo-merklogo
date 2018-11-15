@@ -58,6 +58,7 @@
                     const kleur = 'pink';
 					element.kleur = kleur;
                     await element.updateComplete;
+                    await element.requestUpdate();
 
                     assert.equal(element.style.backgroundColor, kleur);
 				});
