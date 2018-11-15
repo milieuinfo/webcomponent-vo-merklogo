@@ -4,12 +4,16 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 
-		<title>vo-header test</title>
+		<title>vo-merklogo test</title>
 
 		<script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
-		<script src="../node_modules/wct-browser-legacy/browser.js"></script>
+		<script src="../node_modules/mocha/mocha.js"></script>
+		<script src="../node_modules/wct-mocha/wct-mocha.js"></script>
+		<script src="../node_modules/@polymer/test-fixture/test-fixture.js"></script>
+		<script src="../node_modules/chai/chai.js"></script>
+		<script src="../node_modules/sinon/pkg/sinon.js"></script>
 	</head>
-	
+
 	<body>
 		<test-fixture id="vo-merklogo-fixture">
 			<template>
@@ -23,38 +27,39 @@
 			suite('vo-merklogo', () => {
 				const should = chai.should();
 
-				test('bevat het logo van Vlaanderen', (done) => {
+				test('bevat het logo van Vlaanderen', async () => {
 					const element = fixture('vo-merklogo-fixture');
-					flush(() => {
-						const logo = element.shadowRoot.querySelector('#leeuw');
-						should.exist(logo);
-						done();
-					});
+					await element.updateComplete;
+
+					const logo = element.shadowRoot.querySelector('#leeuw');
+					should.exist(logo);
 				});
 
-				test('kan een tekst tonen naast het logo onder Vlaanderen', (done) => {
+				test('kan een tekst tonen naast het logo onder Vlaanderen', async () => {
 					const element = fixture('vo-merklogo-fixture');
 					const tekst = 'Vlaanderen boven';
 					element.tekst = tekst;
-					flush(() => {
-						const hoofdlijn = element.shadowRoot.querySelector('#hoofdlijn');
-						const bijlijn = element.shadowRoot.querySelector('#bijlijn');
-						should.exist(hoofdlijn);
-						should.exist(bijlijn);
-						assert.equal(hoofdlijn.textContent, 'Vlaanderen');
-						assert.equal(bijlijn.textContent, tekst);
-						done();
-					});
+                    await element.updateComplete;
+
+                    const hoofdlijn = element.shadowRoot.querySelector('#hoofdlijn');
+					const bijlijn = element.shadowRoot.querySelector('#bijlijn');
+					should.exist(hoofdlijn);
+					should.exist(bijlijn);
+					assert.equal(hoofdlijn.textContent, 'Vlaanderen');
+					assert.equal(bijlijn.textContent, tekst);
 				});
 
-				test('kan een andere achtegrondkleur krijgen', () => {
+				test('kan een andere achtergrondkleur krijgen', async () => {
 					const element = fixture('vo-merklogo-fixture');
-					const kleur = 'pink';
+                    await element.updateComplete;
+                    
+                    assert.equal(element.style.backgroundColor, '');
+
+                    const kleur = 'pink';
 					element.kleur = kleur;
-					assert.equal(element.style.background, '');
-					flush(() => {
-						assert.equal(element.style.background, kleur);
-					});
+                    await element.updateComplete;
+
+                    assert.equal(element.style.backgroundColor, kleur);
 				});
 			});
 		</script>

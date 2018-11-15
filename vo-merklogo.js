@@ -2,34 +2,32 @@ import {LitElement, html} from '../../node_modules/vodomg-litelement/@polymer/li
 
 /**
  * `vo-merklogo` Het logo van de Vlaamse overheid
- * 
+ *
  * @customElement
  * @polymer
  * @demo demo/vo-merklogo.html
  */
 class VoMerklogo extends LitElement {
-	static get properties() {
-    	return {
-    		/**
-    		 * Achtergrondkleur in hex, rgb or rgba.
-    		 */
-    		kleur: String,
-    		/**
-    		 * Tekst die naast het logo zal gerenderd worden.
-    		 */
-    		tekst: String
-    	};
+    static get properties() {
+        return {
+            /**
+             * Achtergrondkleur in hex, rgb or rgba.
+             */
+            kleur: String,
+            /**
+             * Tekst die naast het logo zal gerenderd worden.
+             */
+            tekst: String
+        };
     }
-	
-	/**
-	 * Rendert het element.
-	 * 
-	 * @return {TemplateResult}
-	 */
+
+    /**
+     * Rendert het element.
+     *
+     * @return {TemplateResult}
+     */
     render() {
-    	this._wijzigAchtergrondKleur();
-    	
-    	return html`
+        return html`
    			<style>
 	            :host {
 	                display: flex;
@@ -94,31 +92,43 @@ class VoMerklogo extends LitElement {
 	    	${this._tekstTemplate}
     	`;
     }
-    
+
     /**
-     * Wijzigt de achtergrondkleur naar de `kleur` als die bepaald is. 
-     * 
-     * @return {void}
+	 * Kijkt naar welke properties aangepast zijn, en verwerkt deze aanpassingen.
+	 *
+     * @param changedProperties
      */
-    _wijzigAchtergrondKleur() {
-    	this.style.backgroundColor = this.kleur;
+    updated(changedProperties) {
+        if (changedProperties.has('kleur')) {
+            this._wijzigAchtergrondKleur(this.kleur);
+        }
     }
-	
+
+    /**
+     * Wijzigt de achtergrondkleur naar de `kleur` als die bepaald is.
+     *
+     * @param kleur
+     * @private
+     */
+    _wijzigAchtergrondKleur(kleur) {
+        this.style.backgroundColor = kleur;
+    }
+
     /**
      * Genereert en geeft de tekst template.
-     * 
+     *
      * @return {void}
      */
-	get _tekstTemplate() {
-		if (this.tekst) {
-    		return html`
+    get _tekstTemplate() {
+        if (this.tekst) {
+            return html`
     			<div id="tekst">
 	                <div id="hoofdlijn">Vlaanderen</div>
 	                <div id="bijlijn">${this.tekst}</div>
 	            </div>
     		`;
-    	}
-	}
+        }
+    }
 }
 
 customElements.define('vo-merklogo', VoMerklogo);
