@@ -6,7 +6,7 @@
   },
   "homepage": "https://github.com/milieuinfo/webcomponent-vo-merklogo#readme",
   "name": "vo-merklogo",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "directories": {
     "test": "test",
     "demo": "demo"
