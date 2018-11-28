@@ -117,7 +117,7 @@ class VoMerklogo extends LitElement {
     /**
      * Genereert en geeft de tekst template.
      *
-     * @return {void}
+     * @return {TemplateResult}
      */
     get _tekstTemplate() {
         if (this.tekst) {
